@@ -15,6 +15,46 @@ Reconoce 15 palabras y funciona en cualquier equipo sin tener que volver a desca
   
 ---
 
+## Palabras reconocidas
+
+El modelo reconoce los siguientes 15 comandos del conjunto Speech Commands:
+
+`bed down follow go happy house left no off on right stop up visual yes`
+
+---
+
+## Requisitos
+
+- Python 3.9 o superior
+- Micrófono funcional
+- Windows, macOS o Linux
+
+---
+
+## Estructura del proyecto
+
+```
+.
+├── models/
+│   ├── cnn_classification_report.txt
+│   ├── cnn_words.keras
+│   └── label_encoder.npy
+│
+├── src/
+│   ├── config.py
+│   ├── download_dataset.py
+│   ├── evaluate_cnn.py
+│   ├── infer_mic.py
+│   ├── preprocess_features.py
+│   └── train_cnn.py
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
+---
+
 ## Instalación
 
 ```bash
